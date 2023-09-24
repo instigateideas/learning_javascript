@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-img">
+            <h1 class="title">BMI Application</h1>
+            <img src="https://source.unsplash.com/1600x1000/?exercise-man" alt="bmi-img" class="bmi-img">
+        </div>
+
+        <div class="container-info">
+            <h3>Enter the below information to calculate the BMI</h3>
+        
+
+            <label class="label-style" for="sex">Choose your sex</label>
+            <select name="sex" id="sex">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+    
+            <label class="label-style" for="dob">Enter the DOB</label>
+            <input type="date" id="dob">
+    
+            <label class="label-style" for="height">Enter your height (cm)</label>
+            <input type="number" id="height" required>
+    
+            <label class="label-style" for="weight">Enter your weight (kg)</label>
+            <input type="number" id="weight" required>
+    
+            <button id="btn" class="btn-submit" onclick="bmiCalculator()">Calculate BMI</button>
+
+            <p class="result" id="result"></p>
+
+        </div>
+
+       
+
+        <script src="app.js"></script>
+
+    </div>
+
+
+    
+
+</body>
+</html>
